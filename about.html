@@ -1,39 +1,117 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About | The Potter's House Thoreau</title>
-<meta name="description" content="Meet Pastor Isaac and Danelle Ramirez and learn what The Potter's House Christian Fellowship Church in Thoreau believes." />
-<link rel="stylesheet" href="/styles.css" />
-<style>
-.about-hero{position:relative;overflow:hidden;padding:170px 0 105px;color:#fff;background:radial-gradient(circle at 80% 18%,rgba(43,132,227,.30),transparent 24%),linear-gradient(120deg,#04142d,#063166 55%,#0a5aad)}
-.about-hero:after{content:"";position:absolute;right:-80px;top:82px;width:510px;height:510px;background:url('/assets/logo-mark.svg') no-repeat center/contain;opacity:.09;filter:brightness(1.4)}
-.about-hero .shell{position:relative;z-index:2;max-width:1000px}.about-hero h1{margin-bottom:20px;font-size:clamp(52px,7vw,88px);line-height:.94}.about-hero p{max-width:720px;color:rgba(255,255,255,.82);font-size:20px;line-height:1.65}
-.pastor-section{background:#fff}.pastor-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}.pastor-card{position:relative;min-height:440px;display:flex;align-items:flex-end;padding:36px;border-radius:28px;overflow:hidden;background:linear-gradient(155deg,#082c5b,#0b5baa);box-shadow:var(--shadow)}
-.pastor-card:before{content:"";position:absolute;inset:0;background:url('/assets/logo-mark.svg') no-repeat center 32px/72% auto;opacity:.24;filter:brightness(1.45)}.pastor-card-copy{position:relative;z-index:2;width:100%;padding-top:180px;color:#fff}.pastor-card-copy span{display:block;margin-bottom:8px;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;opacity:.72}.pastor-card-copy strong{display:block;font-size:32px;letter-spacing:-.04em}.pastor-card-copy p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:15px}
-.about-copy h2{max-width:680px}.about-copy p{max-width:760px;color:#536178}.faith{background:var(--soft)}.faith-intro{max-width:820px;margin-bottom:50px}.faith-intro p{color:var(--muted)}.faith-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.faith-item{position:relative;padding:28px 30px 28px 74px;background:#fff;border:1px solid #e6ebf2;border-radius:20px}.faith-item .num{position:absolute;left:28px;top:30px;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em}.faith-item h3{margin:0 0 10px;color:var(--navy);font-size:22px}.faith-item p{margin:0;color:#64738a;font-size:14px;line-height:1.7}
-.vision-band{padding:76px 0;color:#fff;background:linear-gradient(100deg,var(--red-dark),var(--red))}.vision-band .shell{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:start}.vision-band h2{margin-bottom:0}.vision-band p{color:rgba(255,255,255,.83)}
-@media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-card{min-height:350px}.about-hero{padding-top:145px}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | The Potter's House Thoreau</title>
+  <meta name="description" content="Meet Pastor Isaac and Danelle Ramirez and learn what The Potter's House Christian Fellowship Church in Thoreau believes." />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .about-hero{position:relative;overflow:hidden;padding:170px 0 105px;color:#fff;background:radial-gradient(circle at 80% 18%,rgba(43,132,227,.30),transparent 24%),linear-gradient(120deg,#04142d,#063166 55%,#0a5aad)}
+    .about-hero:after{content:"";position:absolute;right:-80px;top:82px;width:510px;height:510px;background:url('/assets/logo-mark-transparent.webp') no-repeat center/contain;opacity:.09;filter:brightness(1.4)}
+    .about-hero .shell{position:relative;z-index:2;max-width:1000px}
+    .about-hero h1{margin-bottom:20px;font-size:clamp(52px,7vw,88px);line-height:.94}
+    .about-hero p{max-width:720px;color:rgba(255,255,255,.82);font-size:20px;line-height:1.65}
+    .pastor-section{background:#fff}
+    .pastor-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}
+    .pastor-card{position:relative;min-height:440px;display:flex;align-items:flex-end;padding:36px;border-radius:28px;overflow:hidden;background:linear-gradient(155deg,#082c5b,#0b5baa);box-shadow:var(--shadow)}
+    .pastor-card:before{content:"";position:absolute;inset:0;background:url('/assets/logo-mark-transparent.webp') no-repeat center 32px/72% auto;opacity:.24;filter:brightness(1.45)}
+    .pastor-card-copy{position:relative;z-index:2;width:100%;padding-top:180px;color:#fff}
+    .pastor-card-copy span{display:block;margin-bottom:8px;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;opacity:.72}
+    .pastor-card-copy strong{display:block;font-size:32px;letter-spacing:-.04em}
+    .pastor-card-copy p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:15px}
+    .about-copy h2{max-width:680px}
+    .about-copy p{max-width:760px;color:#536178}
+    .faith{background:var(--soft)}
+    .faith-intro{max-width:820px;margin-bottom:50px}
+    .faith-intro p{color:var(--muted)}
+    .faith-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .faith-item{position:relative;padding:28px 30px 28px 74px;background:#fff;border:1px solid #e6ebf2;border-radius:20px}
+    .faith-item .num{position:absolute;left:28px;top:30px;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em}
+    .faith-item h3{margin:0 0 10px;color:var(--navy);font-size:22px}
+    .faith-item p{margin:0;color:#64738a;font-size:14px;line-height:1.7}
+    .vision-band{padding:76px 0;color:#fff;background:linear-gradient(100deg,var(--red-dark),var(--red))}
+    .vision-band .shell{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:start}
+    .vision-band h2{margin-bottom:0}
+    .vision-band p{color:rgba(255,255,255,.83)}
+    @media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-card{min-height:350px}.about-hero{padding-top:145px}}
+  </style>
 </head>
-<body><main>
-<header class="site-header" id="siteHeader"><div class="shell"><a class="brand" href="/" aria-label="The Potter's House Thoreau home"><img class="brand-mark" src="/assets/logo-mark.svg" alt="The Potter's House logo mark" /><span class="brand-text"><span class="brand-top">The</span><span class="brand-main">Potter's House</span><span class="brand-sub">Christian Fellowship Church</span></span></a><nav class="nav" aria-label="Primary navigation"><a href="/about.html">About</a><a href="/#services">Services</a><a href="/#ministries">Ministries</a><a href="/#visit">Visit</a><a class="nav-cta" href="tel:+15052900133">Contact</a></nav></div></header>
-<section class="about-hero"><div class="shell"><p class="kicker light">Who We Are</p><h1>Jesus Christ.<br>His Church. His Mission.</h1><p>The Potter's House in Thoreau is part of Christian Fellowship Ministries, a worldwide fellowship of local churches committed to evangelism, discipleship, church planting, and world evangelism.</p></div></section>
-<section class="section pastor-section"><div class="shell pastor-grid"><div class="pastor-card"><div class="pastor-card-copy"><span>Pastor &amp; Wife</span><strong>Isaac &amp; Danelle Ramirez</strong><p>Serving The Potter's House in Thoreau, New Mexico.</p></div></div><div class="about-copy"><p class="kicker">Our Pastor</p><h2>Pastor Isaac &amp; Danelle Ramirez</h2><p class="lead">Pastor Isaac Ramirez and his wife, Danelle, serve The Potter's House Christian Fellowship Church in Thoreau with a desire to see people saved, families strengthened, disciples raised up, and the Gospel carried beyond the walls of the church.</p><p>Our church is centered on the preaching of Jesus Christ and the Word of God. We believe the local church should be a place where people can encounter God, grow as disciples, discover purpose, and become involved in reaching others with the Gospel.</p><p>We are part of Christian Fellowship Ministries, a fellowship that grew out of the Prescott Potter's House and continues to emphasize personal evangelism, discipleship, church planting, and world evangelism.</p></div></div></section>
-<section class="section faith" id="faith"><div class="shell"><div class="faith-intro"><p class="kicker">Statement of Faith</p><h2>What we believe.</h2><p>Our doctrine follows the same historic Statement of Faith taught throughout our fellowship. These beliefs summarize the biblical truths that shape our preaching, worship, discipleship, and Christian life.</p></div><div class="faith-grid">
-<article class="faith-item"><span class="num">01</span><h3>One God</h3><p>We believe in one eternal God who exists in three Persons: Father, Son, and Holy Spirit.</p></article>
-<article class="faith-item"><span class="num">02</span><h3>God the Father</h3><p>God the Father created the universe and humanity in His image for fellowship with Him, and through Christ calls fallen humanity back to Himself.</p></article>
-<article class="faith-item"><span class="num">03</span><h3>Jesus Christ</h3><p>Jesus Christ is eternally God. He became truly man through the virgin birth and remains one Person with both divine and human natures.</p></article>
-<article class="faith-item"><span class="num">04</span><h3>The Holy Spirit</h3><p>The Holy Spirit is God and the giver of life. He empowers believers for service and witness, works holiness in us, and conforms us to the image of Christ.</p></article>
-<article class="faith-item"><span class="num">05</span><h3>Baptism in the Holy Spirit</h3><p>We believe in the baptism in the Holy Spirit subsequent to conversion, with the biblical evidence of speaking in tongues and the continuing fruit and gifts of the Spirit.</p></article>
-<article class="faith-item"><span class="num">06</span><h3>The Bible</h3><p>We believe the Old and New Testaments are the inspired, infallible Word of God and the final authority for doctrine, correction, instruction, godliness, and Christian conduct.</p></article>
-<article class="faith-item"><span class="num">07</span><h3>The Cross &amp; Atonement</h3><p>Christ's substitutionary death on the cross paid the penalty for the sins of the world, and we believe God's provision in the atonement includes healing for the whole person.</p></article>
-<article class="faith-item"><span class="num">08</span><h3>Salvation</h3><p>Salvation is God's gift, received by faith through repentance, belief in Jesus Christ, and personally receiving Him as Lord and Savior.</p></article>
-<article class="faith-item"><span class="num">09</span><h3>The Christian Life</h3><p>Believers are called to consecration, devotion, holiness, perseverance, and an ongoing life of sanctification while standing firm through trials and spiritual warfare.</p></article>
-<article class="faith-item"><span class="num">10</span><h3>The Church</h3><p>The Church is the Body of Christ and God's dwelling among His people by the Spirit. Every believer has a place in the local church, where disciples are formed and ministers are called to the Great Commission.</p></article>
-<article class="faith-item"><span class="num">11</span><h3>Baptism &amp; the Lord's Supper</h3><p>We practice water baptism as a public testimony of identification with Christ's death and resurrection, and the Lord's Supper in remembrance of His death until He comes again.</p></article>
-<article class="faith-item"><span class="num">12</span><h3>The Return of Christ</h3><p>We believe in the bodily and personal return of Jesus Christ, the resurrection of the saints, the millennium, and final judgment, with eternity determined by each person's relationship to Christ.</p></article>
-</div></div></section>
-<section class="vision-band"><div class="shell"><div><p class="kicker light">Our Vision</p><h2>Changing Lives.<br>Making Disciples.<br>Reaching the World.</h2></div><div><p>Our fellowship's vision is lived out through evangelism, conversion, commitment to the local church, discipleship, church planting, and world evangelism. We preach for a decision, train disciples within the local church, and believe those disciples should be released into the harvest field to reach others.</p><a class="button button-white" href="/#visit">Plan Your Visit <span>→</span></a></div></div></section>
-<footer><div class="shell footer-grid"><div class="footer-brand"><img src="/assets/logo-mark.svg" alt="The Potter's House logo mark"><div class="footer-brand-copy"><strong>The Potter's House</strong><span>Christian Fellowship Church</span><p>Changing Lives, Making Disciples, Reaching the World.</p></div></div><div><strong>Services</strong><p>Sunday 10:30 AM &amp; 6:00 PM</p><p>Wednesday 7:00 PM</p></div><div><strong>Location</strong><p>91 1st Street</p><p>Thoreau, New Mexico</p></div><div><strong>Connect</strong><p><a href="tel:+15052900133">505-290-0133</a></p><p><a href="https://www.cfmmap.org/" target="_blank" rel="noreferrer">CFM Fellowship</a></p></div></div><div class="shell copyright">© 2026 The Potter's House Christian Fellowship Church • Thoreau, NM</div></footer>
-</main><script>const header=document.getElementById('siteHeader');const updateHeader=()=>window.scrollY>24?header.classList.add('is-scrolled'):header.classList.remove('is-scrolled');updateHeader();window.addEventListener('scroll',updateHeader,{passive:true});</script></body></html>
+<body>
+<main>
+  <header class="site-header" id="siteHeader">
+    <div class="shell">
+      <a class="brand" href="/" aria-label="The Potter's House Thoreau home">
+        <img class="brand-mark" src="/assets/logo-mark-transparent.webp" alt="The Potter's House logo mark" />
+        <span class="brand-text"><span class="brand-top">The</span><span class="brand-main">Potter's House</span><span class="brand-sub">Christian Fellowship Church</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/about.html">About</a><a href="/#services">Services</a><a href="/#ministries">Ministries</a><a href="/#visit">Visit</a><a class="nav-cta" href="tel:+15052900133">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <div class="shell">
+      <p class="kicker light">Who We Are</p>
+      <h1>Jesus Christ.<br>His Church. His Mission.</h1>
+      <p>The Potter's House in Thoreau is part of Christian Fellowship Ministries, a worldwide fellowship of local churches committed to evangelism, discipleship, church planting, and world evangelism.</p>
+    </div>
+  </section>
+
+  <section class="section pastor-section">
+    <div class="shell pastor-grid">
+      <div class="pastor-card">
+        <div class="pastor-card-copy"><span>Pastor &amp; Wife</span><strong>Isaac &amp; Danelle Ramirez</strong><p>Serving The Potter's House in Thoreau, New Mexico.</p></div>
+      </div>
+      <div class="about-copy">
+        <p class="kicker">Our Pastor</p>
+        <h2>Pastor Isaac &amp; Danelle Ramirez</h2>
+        <p class="lead">Pastor Isaac Ramirez and his wife, Danelle, serve The Potter's House Christian Fellowship Church in Thoreau with a desire to see people saved, families strengthened, disciples raised up, and the Gospel carried beyond the walls of the church.</p>
+        <p>Our church is centered on the preaching of Jesus Christ and the Word of God. We believe the local church should be a place where people can encounter God, grow as disciples, discover purpose, and become involved in reaching others with the Gospel.</p>
+        <p>We are part of Christian Fellowship Ministries, a fellowship that grew out of the Prescott Potter's House and continues to emphasize personal evangelism, discipleship, church planting, and world evangelism.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faith" id="faith">
+    <div class="shell">
+      <div class="faith-intro"><p class="kicker">Statement of Faith</p><h2>What we believe.</h2><p>Our doctrine follows the same historic Statement of Faith taught throughout our fellowship. These beliefs summarize the biblical truths that shape our preaching, worship, discipleship, and Christian life.</p></div>
+      <div class="faith-grid">
+        <article class="faith-item"><span class="num">01</span><h3>One God</h3><p>We believe in one eternal God who exists in three Persons: Father, Son, and Holy Spirit.</p></article>
+        <article class="faith-item"><span class="num">02</span><h3>God the Father</h3><p>God the Father created the universe and humanity in His image for fellowship with Him, and through Christ calls fallen humanity back to Himself.</p></article>
+        <article class="faith-item"><span class="num">03</span><h3>Jesus Christ</h3><p>Jesus Christ is eternally God. He became truly man through the virgin birth and remains one Person with both divine and human natures.</p></article>
+        <article class="faith-item"><span class="num">04</span><h3>The Holy Spirit</h3><p>The Holy Spirit is God and the giver of life. He empowers believers for service and witness, works holiness in us, and conforms us to the image of Christ.</p></article>
+        <article class="faith-item"><span class="num">05</span><h3>Baptism in the Holy Spirit</h3><p>We believe in the baptism in the Holy Spirit subsequent to conversion, with the biblical evidence of speaking in tongues and the continuing fruit and gifts of the Spirit.</p></article>
+        <article class="faith-item"><span class="num">06</span><h3>The Bible</h3><p>We believe the Old and New Testaments are the inspired, infallible Word of God and the final authority for doctrine, correction, instruction, godliness, and Christian conduct.</p></article>
+        <article class="faith-item"><span class="num">07</span><h3>The Cross &amp; Atonement</h3><p>Christ's substitutionary death on the cross paid the penalty for the sins of the world, and we believe God's provision in the atonement includes healing for the whole person.</p></article>
+        <article class="faith-item"><span class="num">08</span><h3>Salvation</h3><p>Salvation is God's gift, received by faith through repentance, belief in Jesus Christ, and personally receiving Him as Lord and Savior.</p></article>
+        <article class="faith-item"><span class="num">09</span><h3>The Christian Life</h3><p>Believers are called to consecration, devotion, holiness, perseverance, and an ongoing life of sanctification while standing firm through trials and spiritual warfare.</p></article>
+        <article class="faith-item"><span class="num">10</span><h3>The Church</h3><p>The Church is the Body of Christ and God's dwelling among His people by the Spirit. Every believer has a place in the local church, where disciples are formed and ministers are called to the Great Commission.</p></article>
+        <article class="faith-item"><span class="num">11</span><h3>Baptism &amp; the Lord's Supper</h3><p>We practice water baptism as a public testimony of identification with Christ's death and resurrection, and the Lord's Supper in remembrance of His death until He comes again.</p></article>
+        <article class="faith-item"><span class="num">12</span><h3>The Return of Christ</h3><p>We believe in the bodily and personal return of Jesus Christ, the resurrection of the saints, the millennium, and final judgment, with eternity determined by each person's relationship to Christ.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision-band">
+    <div class="shell"><div><p class="kicker light">Our Vision</p><h2>Changing Lives.<br>Making Disciples.<br>Reaching the World.</h2></div><div><p>Our fellowship's vision is lived out through evangelism, conversion, commitment to the local church, discipleship, church planting, and world evangelism. We preach for a decision, train disciples within the local church, and believe those disciples should be released into the harvest field to reach others.</p><a class="button button-white" href="/#visit">Plan Your Visit <span>→</span></a></div></div>
+  </section>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img src="/assets/logo-mark-transparent.webp" alt="The Potter's House logo mark"><div class="footer-brand-copy"><strong>The Potter's House</strong><span>Christian Fellowship Church</span><p>Changing Lives, Making Disciples, Reaching the World.</p></div></div>
+      <div><strong>Services</strong><p>Sunday 10:30 AM &amp; 6:00 PM</p><p>Wednesday 7:00 PM</p></div>
+      <div><strong>Location</strong><p>91 1st Street</p><p>Thoreau, New Mexico</p></div>
+      <div><strong>Connect</strong><p><a href="tel:+15052900133">505-290-0133</a></p><p><a href="https://www.cfmmap.org/" target="_blank" rel="noreferrer">CFM Fellowship</a></p></div>
+    </div>
+    <div class="shell copyright">© 2026 The Potter's House Christian Fellowship Church • Thoreau, NM</div>
+  </footer>
+</main>
+<script>
+  const header=document.getElementById('siteHeader');
+  const updateHeader=()=>window.scrollY>24?header.classList.add('is-scrolled'):header.classList.remove('is-scrolled');
+  updateHeader();window.addEventListener('scroll',updateHeader,{passive:true});
+</script>
+</body>
+</html>
