@@ -35,7 +35,8 @@
     .vision-band .shell{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:start}
     .vision-band h2{margin-bottom:0}
     .vision-band p{color:rgba(255,255,255,.83)}
-    @media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-card{min-height:620px;max-width:540px;width:100%;margin:0 auto}.about-hero{padding-top:145px}}
+    @media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-grid{gap:42px}.pastor-card{min-height:540px;max-width:540px;width:100%;margin:0 auto}.about-hero{padding:120px 0 76px}.about-hero h1{font-size:clamp(42px,12vw,62px);line-height:.98}.about-hero p{font-size:17px;line-height:1.6}.faith-intro{margin-bottom:34px}.faith-item{padding:24px 22px 24px 64px}.faith-item .num{left:22px;top:26px}.vision-band{padding:58px 0}.vision-band .shell{gap:28px}}
+    @media(max-width:520px){.pastor-card{min-height:460px;border-radius:20px}.pastor-card-copy{padding:120px 24px 26px}.pastor-card-copy strong{font-size:27px}.faith-item{padding:22px 18px 22px 54px;border-radius:16px}.faith-item .num{left:18px;top:24px}.faith-item h3{font-size:20px}}
   </style>
 </head>
 <body>
@@ -45,7 +46,8 @@
       <a class="brand" href="/" aria-label="The Potter's House Thoreau home">
         <img class="brand-logo" src="/assets/logo-mark-transparent.webp" alt="The Potter's House Christian Fellowship Church" />
       </a>
-      <nav class="nav" aria-label="Primary navigation">
+      <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+      <nav class="nav" id="primaryNav" aria-label="Primary navigation">
         <a href="/about.html">About</a><a href="/#services">Services</a><a href="/#ministries">Ministries</a><a href="/#visit">Visit</a><a class="nav-cta" href="tel:+15052900133">Contact</a>
       </nav>
     </div>
@@ -111,7 +113,13 @@
 </main>
 <script>
   const header=document.getElementById('siteHeader');
+  const menuToggle=document.querySelector('.mobile-menu-toggle');
+  const nav=document.getElementById('primaryNav');
   const updateHeader=()=>window.scrollY>24?header.classList.add('is-scrolled'):header.classList.remove('is-scrolled');
+  const closeMenu=()=>{header.classList.remove('menu-open');menuToggle?.setAttribute('aria-expanded','false')};
+  menuToggle?.addEventListener('click',()=>{const open=header.classList.toggle('menu-open');menuToggle.setAttribute('aria-expanded',String(open))});
+  nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});
   updateHeader();window.addEventListener('scroll',updateHeader,{passive:true});
 </script>
 </body>
