@@ -18,7 +18,8 @@
       <a class="brand" href="#home" aria-label="The Potter's House Thoreau home">
         <img class="brand-logo" src="/assets/logo-mark-transparent.webp" alt="The Potter's House Christian Fellowship Church" />
       </a>
-      <nav class="nav" aria-label="Primary navigation">
+      <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+      <nav class="nav" id="primaryNav" aria-label="Primary navigation">
         <a href="/about.html">About</a>
         <a href="#services">Services</a>
         <a href="#ministries">Ministries</a>
@@ -158,10 +159,22 @@
 </main>
 <script>
   const header = document.getElementById('siteHeader');
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.getElementById('primaryNav');
   const updateHeader = () => {
     if (window.scrollY > 24) header.classList.add('is-scrolled');
     else header.classList.remove('is-scrolled');
   };
+  const closeMenu = () => {
+    header.classList.remove('menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  };
+  menuToggle?.addEventListener('click', () => {
+    const open = header.classList.toggle('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 </script>
