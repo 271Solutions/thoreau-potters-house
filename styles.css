@@ -354,3 +354,5 @@ footer p{font-size:.9rem;line-height:1.65}
  .hero-list-item b,.service-card b{grid-column:2;text-align:left;margin-top:2px}
  .event-posters{grid-template-columns:1fr 1fr}
 }
+
+.email-link{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
