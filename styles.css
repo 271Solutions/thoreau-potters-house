@@ -97,7 +97,7 @@ p{font-size:16px;line-height:1.75}
 .section-copy p:not(.kicker){max-width:680px;color:#536178}
 .text-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:var(--red);font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
 .statement-card{position:relative;padding:60px 54px;color:#fff;background:linear-gradient(150deg,var(--navy),#0c4f96);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
-.statement-card::before{content:"";position:absolute;width:100%;height:100%;top:0;left:0;background:url('/assets/world-globe.webp') no-repeat right -30px bottom -20px / 220px auto;opacity:.08}
+.statement-card::before{content:"";position:absolute;width:100%;height:100%;top:0;left:0;background:url('/assets/world-map.webp') no-repeat right -30px bottom -20px / 220px auto;opacity:.08}
 .statement-card::after{content:"";position:absolute;width:6px;top:0;bottom:0;left:0;background:var(--red)}
 .statement-small{display:block;margin-bottom:24px;color:#b6c9df;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 .statement-card blockquote{position:relative;z-index:1;margin-bottom:16px;font-family:Georgia,'Times New Roman',serif;font-size:33px;line-height:1.32}
@@ -127,7 +127,7 @@ p{font-size:16px;line-height:1.75}
 
 .invite-section{display:grid;grid-template-columns:1fr 1fr;min-height:620px;color:#fff;background:var(--navy)}
 .invite-image{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(36,134,218,.42),transparent 28%),linear-gradient(135deg,#031327,#07579b)}
-.invite-image::before{content:"";position:absolute;inset:0;background:url('/assets/world-globe.webp') no-repeat center center / 66% auto;opacity:.14;filter:brightness(1.6)}
+.invite-image::before{content:"";position:absolute;inset:0;background:url('/assets/world-map.webp') no-repeat center center / 66% auto;opacity:.14;filter:brightness(1.6)}
 .invite-image::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(120deg,transparent 0 35px,rgba(255,255,255,.025) 36px 37px)}
 .invite-content{display:flex;flex-direction:column;justify-content:center;padding:80px clamp(45px,8vw,120px)}
 .invite-content h2{margin-bottom:24px}
@@ -258,9 +258,9 @@ footer a:hover{color:#fff}
 
 /* Fellowship world identity and events */
 .hero{background:linear-gradient(105deg,rgba(255,255,255,.94),rgba(244,249,255,.82)),radial-gradient(circle at 70% 48%,#d2e5f8,transparent 55%)}
-.world-watermark{right:-3%;top:12%;width:min(68vw,860px);height:84%;background-image:url('/assets/world-globe.webp');opacity:.18;filter:grayscale(1) sepia(1) hue-rotate(170deg) saturate(3)}
+.world-watermark{right:-3%;top:12%;width:min(68vw,860px);height:84%;background-image:url('/assets/world-map.webp');opacity:.18;filter:grayscale(1) sepia(1) hue-rotate(170deg) saturate(3)}
 .world-lines{opacity:.58}
-.about-hero:after{background-image:url('/assets/world-globe.webp')}
+.about-hero:after{background-image:url('/assets/world-map.webp')}
 .event-feature{background:#f1f6fc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .event-feature-grid{display:grid;grid-template-columns:1.1fr .7fr;gap:clamp(35px,7vw,110px);align-items:center}
 .event-feature-copy h2{max-width:680px}
@@ -269,8 +269,8 @@ footer a:hover{color:#fff}
 .event-schedule span{text-align:right;color:var(--blue);font-weight:700}
 .event-art{display:block;max-width:360px;justify-self:center;box-shadow:0 26px 65px rgba(8,28,62,.2)}
 .event-art img{width:100%;height:auto}
-.events-hero{position:relative;overflow:hidden;padding:180px 0 90px;color:#fff;background:linear-gradient(105deg,rgba(3,17,39,.97),rgba(6,53,107,.9)),url('/assets/world-globe.webp') no-repeat right 8% center / 500px}
-.events-hero:after{content:"";position:absolute;right:3%;top:7%;height:90%;aspect-ratio:1;background:url('/assets/world-globe.webp') no-repeat center/contain;opacity:.14;pointer-events:none}
+.events-hero{position:relative;overflow:hidden;padding:180px 0 90px;color:#fff;background:linear-gradient(105deg,rgba(3,17,39,.97),rgba(6,53,107,.9)),url('/assets/world-map.webp') no-repeat right 8% center / 500px}
+.events-hero:after{content:"";position:absolute;right:3%;top:7%;height:90%;aspect-ratio:1;background:url('/assets/world-map.webp') no-repeat center/contain;opacity:.14;pointer-events:none}
 .events-hero .shell{position:relative;z-index:1}
 .events-hero h1{max-width:800px;font-size:clamp(44px,7vw,82px);line-height:1}
 .events-hero p:not(.kicker){max-width:650px;font-size:19px;color:#d9e8f7}
@@ -280,3 +280,12 @@ footer a:hover{color:#fff}
 .event-posters img{width:100%;height:auto;box-shadow:0 16px 40px rgba(8,28,62,.15)}
 @media(max-width:800px){.event-feature-grid,.event-detail-grid{grid-template-columns:1fr}.event-art{max-width:300px}.events-hero{padding:125px 0 65px}.event-detail-grid{gap:35px}}
 @media(max-width:520px){.world-watermark{top:4%;right:-33%;width:110vw;height:55%;opacity:.12}.event-schedule{grid-template-columns:1fr;gap:5px}.event-schedule strong:not(:first-child){margin-top:10px}.event-schedule span{text-align:left}.event-posters{gap:8px}.event-feature{padding-top:58px}}
+
+/* A transparent world map carries the fellowship's global mission. */
+.world-watermark{top:8%;right:-7%;width:min(77vw,1050px);height:82%;background-position:center;background-size:contain;opacity:.16;filter:none}
+.world-lines{display:none}
+.about-hero:after{top:75px;right:-4%;width:min(65vw,850px);height:440px;background-size:contain;opacity:.13;filter:none}
+.invite-image::before{background-size:86% auto;opacity:.24;filter:none}
+.events-hero{background:linear-gradient(105deg,#031127,#07366a)}
+.events-hero:after{right:-2%;top:5%;width:min(70vw,920px);height:90%;aspect-ratio:auto;background-size:contain;opacity:.20}
+@media(max-width:700px){.world-watermark{top:2%;right:-25%;width:130vw;height:64%;opacity:.11}.about-hero:after{right:-35%;top:55px;width:125vw;height:320px;opacity:.10}.events-hero:after{right:-30%;width:130vw;opacity:.12}}
