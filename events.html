@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Upcoming Events | The Potter's House Thoreau</title><meta name="description" content="Upcoming events at The Potter's House in Thoreau, NM. Revival services with Pastor Shawn Davis, October 18–22, 2026."><link rel="stylesheet" href="/styles.css"></head><body><main>
+  <header class="site-header" id="siteHeader">
+    <div class="shell">
+      <a class="brand" href="/" aria-label="The Potter's House Thoreau home">
+        <img class="brand-logo" src="/assets/logo-mark-transparent.webp" alt="The Potter's House Christian Fellowship Church" />
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+      <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="/about.html">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#ministries">Ministries</a><a href="/events.html">Events</a>
+        <a href="/#visit">Visit</a>
+        <a class="nav-cta" href="tel:+15052900133">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<section class="events-hero"><div class="shell"><p class="kicker light">Upcoming Events</p><h1>Come expecting God to move.</h1><p>Gather with us in Thoreau for preaching, prayer, and fellowship.</p></div></section>
+<section class="section event-detail"><div class="shell event-detail-grid"><div><p class="kicker">October 18–22, 2026</p><h2>Revival Services</h2><p class="lead">With Pastor Shawn Davis</p><p>When Jesus steps in, everything can change. You and your family are invited to every service.</p><div class="event-schedule"><strong>Sunday, October 18</strong><span>10:30 AM &amp; 6:00 PM</span><strong>Monday–Thursday, October 19–22</strong><span>7:00 PM nightly</span></div><p>Refreshments following each evening service.</p><address><strong>The Potter's House Christian Fellowship Church</strong><br>91 1st Street, Thoreau, NM</address><div class="visit-actions"><a class="button button-primary" href="https://www.google.com/maps/search/?api=1&amp;query=91+1st+Street+Thoreau+NM" target="_blank" rel="noreferrer">Get Directions</a><a class="button button-outline" href="tel:+15052900133">Call 505-290-0133</a></div></div><div class="event-posters"><a href="/assets/revival-2026-front.webp" target="_blank" rel="noreferrer"><img src="/assets/revival-2026-front.webp" alt="Revival invitation front: When Jesus steps in, everything can change" loading="lazy"></a><a href="/assets/revival-2026-back.webp" target="_blank" rel="noreferrer"><img src="/assets/revival-2026-back.webp" alt="Revival invitation back with dates, service times, Pastor Shawn Davis, and location" loading="lazy"></a></div></div></section>
+  <footer>
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/logo-mark-transparent.webp" alt="The Potter's House Christian Fellowship Church">
+        <p>Changing Lives, Making Disciples, Reaching the World.</p>
+      </div>
+      <div><strong>Services</strong><p>Sunday 10:30 AM &amp; 6:00 PM</p><p>Wednesday 7:00 PM</p><p>Morning Prayer Mon–Fri 6:30 AM</p></div>
+      <div><strong>Location</strong><p>91 1st Street</p><p>Thoreau, New Mexico</p></div>
+      <div><strong>Connect</strong><p><a href="tel:+15052900133">505-290-0133</a></p><p><a href="https://www.cfmmap.org/" target="_blank" rel="noreferrer">CFM Fellowship</a></p></div>
+    </div>
+    <div class="shell copyright">© 2026 The Potter's House Christian Fellowship Church • Thoreau, NM</div>
+  </footer>
+</main>
+<script>
+  const header = document.getElementById('siteHeader');
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.getElementById('primaryNav');
+  const updateHeader = () => {
+    if (window.scrollY > 24) header.classList.add('is-scrolled');
+    else header.classList.remove('is-scrolled');
+  };
+  const closeMenu = () => {
+    header.classList.remove('menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  };
+  menuToggle?.addEventListener('click', () => {
+    const open = header.classList.toggle('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+</script>
+</body>
+</html>
