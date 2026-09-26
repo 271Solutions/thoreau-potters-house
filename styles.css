@@ -356,3 +356,13 @@ footer p{font-size:.9rem;line-height:1.65}
 }
 
 .email-link{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+
+.testimonies{position:relative;overflow:hidden;color:#fff;background:linear-gradient(105deg,#041832,#0a3e77)}
+.testimonies::before{content:"";position:absolute;inset:0;background:url('/assets/world-map.webp') no-repeat center/100% auto;opacity:.11;pointer-events:none}
+.testimonies-inner{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr);gap:clamp(35px,7vw,100px);align-items:center}
+.testimonies h2{max-width:700px}
+.testimonies p:not(.kicker){max-width:650px;color:#d2e3f4;font-size:1.15rem;line-height:1.65}
+.testimonies-soon{padding:40px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.07);border-radius:20px}
+.testimonies-soon span{display:block;margin-bottom:20px;color:#fff;font-size:clamp(1.9rem,3vw,2.7rem);font-weight:800;letter-spacing:-.035em}
+.testimonies-soon p{margin:0}
+@media(max-width:800px){.testimonies-inner{grid-template-columns:1fr;gap:22px}.testimonies-soon{padding:28px}.testimonies::before{background-position:center 50px}}
