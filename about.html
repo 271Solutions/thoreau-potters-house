@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="/styles.css" />
   <style>
     .about-hero{position:relative;overflow:hidden;padding:170px 0 105px;color:#fff;background:radial-gradient(circle at 80% 18%,rgba(43,132,227,.30),transparent 24%),linear-gradient(120deg,#04142d,#063166 55%,#0a5aad)}
-    .about-hero:after{content:"";position:absolute;right:-80px;top:82px;width:510px;height:510px;background:url('/assets/logo-mark-transparent.webp') no-repeat center/contain;opacity:.09;filter:brightness(1.4)}
+    .about-hero:after{content:"";position:absolute;inset:0;width:100%;height:100%;background:url('/assets/world-map.webp') no-repeat center center/100% auto;opacity:.14}
     .about-hero .shell{position:relative;z-index:2;max-width:1000px}
-    .about-hero h1{margin-bottom:20px;font-size:clamp(52px,7vw,88px);line-height:.94}
+    .about-hero h1{margin-bottom:20px;font-size:clamp(3rem,6vw,5rem);line-height:1.05}
     .about-hero p{max-width:720px;color:rgba(255,255,255,.82);font-size:20px;line-height:1.65}
     .pastor-section{background:#fff}
     .pastor-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}
@@ -18,9 +18,9 @@
     .pastor-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
     .pastor-card:after{content:"";position:absolute;inset:42% 0 0;background:linear-gradient(180deg,transparent,rgba(3,17,39,.92))}
     .pastor-card-copy{position:relative;z-index:2;width:100%;padding:150px 36px 34px;color:#fff}
-    .pastor-card-copy span{display:block;margin-bottom:8px;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;opacity:.72}
+    .pastor-card-copy span{display:block;margin-bottom:8px;font-size:14px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.72}
     .pastor-card-copy strong{display:block;font-size:32px;letter-spacing:-.04em}
-    .pastor-card-copy p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:15px}
+    .pastor-card-copy p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:16px}
     .about-copy h2{max-width:680px}
     .about-copy p{max-width:760px;color:#536178}
     .faith{background:var(--soft)}
@@ -28,14 +28,14 @@
     .faith-intro p{color:var(--muted)}
     .faith-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .faith-item{position:relative;padding:28px 30px 28px 74px;background:#fff;border:1px solid #e6ebf2;border-radius:20px}
-    .faith-item .num{position:absolute;left:28px;top:30px;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em}
+    .faith-item .num{position:absolute;left:28px;top:30px;color:var(--red);font-size:14px;font-weight:900;letter-spacing:.08em}
     .faith-item h3{margin:0 0 10px;color:var(--navy);font-size:22px}
-    .faith-item p{margin:0;color:#64738a;font-size:14px;line-height:1.7}
+    .faith-item p{margin:0;color:#64738a;font-size:16px;line-height:1.7}
     .vision-band{padding:76px 0;color:#fff;background:linear-gradient(100deg,var(--red-dark),var(--red))}
     .vision-band .shell{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:start}
     .vision-band h2{margin-bottom:0}
     .vision-band p{color:rgba(255,255,255,.83)}
-    @media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-grid{gap:42px}.pastor-card{min-height:540px;max-width:540px;width:100%;margin:0 auto}.about-hero{padding:120px 0 76px}.about-hero h1{font-size:clamp(42px,12vw,62px);line-height:.98}.about-hero p{font-size:17px;line-height:1.6}.faith-intro{margin-bottom:34px}.faith-item{padding:24px 22px 24px 64px}.faith-item .num{left:22px;top:26px}.vision-band{padding:58px 0}.vision-band .shell{gap:28px}}
+    @media(max-width:850px){.pastor-grid,.faith-grid,.vision-band .shell{grid-template-columns:1fr}.pastor-grid{gap:42px}.pastor-card{min-height:540px;max-width:540px;width:100%;margin:0 auto}.about-hero{padding:120px 0 76px}.about-hero:after{background-position:center 85px;background-size:100% auto;opacity:.12}.about-hero h1{font-size:clamp(2.5rem,10vw,3.75rem);line-height:1.04}.about-hero p{font-size:17px;line-height:1.6}.faith-intro{margin-bottom:34px}.faith-item{padding:24px 22px 24px 64px}.faith-item .num{left:22px;top:26px}.vision-band{padding:58px 0}.vision-band .shell{gap:28px}}
     @media(max-width:520px){.pastor-card{min-height:460px;border-radius:20px}.pastor-card-copy{padding:120px 24px 26px}.pastor-card-copy strong{font-size:27px}.faith-item{padding:22px 18px 22px 54px;border-radius:16px}.faith-item .num{left:18px;top:24px}.faith-item h3{font-size:20px}}
   </style>
 </head>
